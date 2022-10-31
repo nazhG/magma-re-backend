@@ -15,6 +15,7 @@ import { MongooseModule } from '@nestjs/mongoose';
         dbName: 'cluster0',
         w: 'majority',
         retryWrites: true,
+        userNewUrlParser: true,
       },
     ),
   ],
