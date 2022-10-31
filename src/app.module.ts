@@ -8,15 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     PriceModule,
     MongooseModule.forRoot(
-      'mongodb+srv://nazhg:<password>@cluster0.lalsfyz.mongodb.net',
-      {
-        user: 'nazhg',
-        pass: '2J884UhVYCMUwwdY',
-        dbName: 'cluster0',
-        w: 'majority',
-        retryWrites: true,
-        userNewUrlParser: true,
-      },
+      'mongodb+srv://nazhg:2J884UhVYCMUwwdY@cluster0.lalsfyz.mongodb.net/?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],

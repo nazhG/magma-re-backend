@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 
-new Schema({
-    name: String,
-    description: Date,
-    price: Number
-})
+export const PriceSchema = new Schema({
+  price: Number,
+  name: String,
+  date: Number,
+});
